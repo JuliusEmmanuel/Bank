@@ -68,7 +68,7 @@ const Login = () => {
                 <img src={loginimg} alt=''/>
             </div>
             <div className='theLogin'>
-                <h1>Login</h1>
+                <h1>Login...</h1>
                 <div className='line'></div>
 
                 <div className='loginInputs'>
