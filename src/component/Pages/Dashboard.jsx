@@ -1,13 +1,13 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./dashboardStyle.css"
 import { Link } from 'react-router-dom'
-import { Thecontext } from '../../App'
+// import { Thecontext } from '../../App'
 import axios from 'axios'
 
 const Dashboard = () => {
 
-  const {currentBalance, setCurrentBalance,
-        accountNumber, setAccountNumber,} = useContext(Thecontext)
+  // const {currentBalance, setCurrentBalance,
+  //       accountNumber, setAccountNumber,} = useContext(Thecontext)
 
 
 
@@ -17,7 +17,11 @@ const Dashboard = () => {
   const [amount, setAmount] = useState(localStorage.getItem("amount") || [])
   const [receiver, setReceiver] = useState(localStorage.getItem("receiver") ||[])
   const [sender, setSender] = useState(localStorage.getItem("sender") ||[])
-  const [date, setDate] = useState(localStorage.getItem("date") ||  [])
+  // const [date, setDate] = useState(localStorage.getItem("date") ||  [])
+  console.log(setType)
+  console.log(setAmount)
+  console.log(setReceiver)
+  console.log(setSender)
   
 
 

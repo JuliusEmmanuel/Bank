@@ -5,24 +5,25 @@ import signupimg from "../Img/signupimg.png"
 import theprofileImage from "../Img/profileImage.jpg"
 import axios from "axios"
 import Swal from 'sweetalert2'
-import { Thecontext } from '../../App'
+// import { Thecontext } from '../../App'
 
 
 const Signup = () => {
 
 
-  const {currentBalance, setCurrentBalance,
-         accountNumber, setAccountNumber,
-         firstName, setFirstName,
-         lastName, setLastName,
-         email, setEmail,
-         phoneNumber, setPhoneNumber
-        } = useContext(Thecontext)
+  // const {currentBalance, setCurrentBalance,
+  //        accountNumber, setAccountNumber,
+  //        firstName, setFirstName,
+  //        lastName, setLastName,
+  //        email, setEmail,
+  //        phoneNumber, setPhoneNumber
+  //       } = useContext(Thecontext)
 
 
 
   const [profileImage, setProfileImage] = useState([theprofileImage])
   const [formErrors, setFormErrors]  = useState()
+  console.log(formErrors)
 
   const handleImageChange = (e)=>{
      setProfileImage(URL.createObjectURL(e.target.files[0]))
